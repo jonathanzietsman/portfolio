@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+/* Body Styling */
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+/* Header Styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(8, 27, 41, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    margin-left: 35px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+/* Home Section */
+.home {
+    background: linear-gradient(rgba(8, 27, 41, 0.8), rgba(8, 27, 41, 0.8)), url('home.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    min-height: 100vh;
+}
+
+.home h1,
+.home h3,
+.home p {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.home h1 {
+    font-size: 80px;
+    font-weight: 700;
+    animation-delay: 0.4s;
+}
+
+.home h3 {
+    font-size: 40px;
+    color: #00abf0;
+    animation-delay: 0.6s;
+}
+
+.home p {
+    font-size: 18px;
+    margin: 20px 0 40px;
+    animation-delay: 0.8s;
+}
+
+/* Buttons */
+.btn-box a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* added  */
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #00abf0;
+    border-radius: 50px;
+    font-size: 18px;
+    width: 200px; /* added */
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.btn-box a:hover {
+    background: #00abf0;
+    color: #081b29;
+
+    /* Shadow/Scaling effect */
+    box-shadow: 0 5px 15px rgba(0, 171, 240, 0.5);
+    transform: scale(1.05);
+}
+
+/* Social Icons */
+/* .home-sci {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+
+} */
+
+/* .home-sci a {
+    font-size: 30px;
+    color: #00abf0;
+
+} */
+
+.home-sci a:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.about h2{
+    font-size: 45px;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+/* Glassmorphism Effect */
+.about,
+.services,
+.portfolio,
+.contact {
+    padding: 60px 10%;
+    color: #ededed;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+}
+
+/* Service Section */
+.services{
+    padding: 60px 10%;
+    color: #ededed;
+    text-align: center;
+}
+
+.services h2{
+    font-size: 45px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.card i {
+    font-size: 40px;
+    color: #00abf0;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 30px;
+    color: #ededed;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+/* Portfolio Section */
+
+.portfolio h2{
+    font-size: 45px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.portfolio p {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.portfolio {
+    /* padding: 60px 10%; */
+    color: #ededed;
+    text-align: center;
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-fluid{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-fluid img{
+   /*  width: 100px; */
+    /* margin-bottom: 10px; */
+}
+
+/* .portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+} */
+
+/* .portfolio-item {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s;
+} */
+
+/* .portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+} */
+
+/* .img-responsive{
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+ */
+/* .row {
+    flex: 1 1 calc(33.33% - 20px);  /* Ensures each item takes up 33.33% of the width, minus margin space */
+    margin-bottom: 20px; /* Adds space between rows */
+    box-sizing: border-box;
+} */
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(8, 27, 41, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 12px;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Contact Section */
+.contact {
+    background: rgba(8, 27, 41, 0.9);
+    padding: 60px 10%;
+    border-radius: 12px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.contact-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #00abf0;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #0091c2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card{
+        flex: 1 1 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-box {
+        flex-direction: column;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
