@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, sans-serif;
+}
+#container{
+    padding: 10px;
+    /* Lengthening the tracks!: Page 205 */
+    width: 670px; /* Increased from 360px */
+    height: 90%; /* Increased from 80% */
+    background-color: #00FF00;
+}
+#track{
+    /* Lengthening the tracks!: Page 205 */
+    width: 700px; /* Increased from 340px */
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 20px auto;
+}
+#train{
+    height: 92px;
+    width: 100px;
+    position: relative;
+    left: 0px;
+}
+#stopButton{
+    padding-top: 15px;
+    margin: 10px auto;
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    color: red;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
